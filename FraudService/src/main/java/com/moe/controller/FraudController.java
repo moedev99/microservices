@@ -1,8 +1,8 @@
 package com.moe.controller;
 
 
+import com.moe.clients.fraud.FraudCheckResponse;
 import com.moe.service.FraudCheckService;
-import com.moe.service.FraudCheckresponse;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,10 +21,10 @@ public class FraudController {
 
 
     @GetMapping(path = "{customerId}")
-    public FraudCheckresponse isFraudster(@PathVariable("customerId") Integer customerId){
+    public FraudCheckResponse isFraudster(@PathVariable("customerId") Integer customerId){
         boolean isFraudulentCustomer = fraudCheckService.isFradudulentCustomer(customerId);
         log.info("fraud check request for customer {}", customerId);
-        return new FraudCheckresponse(isFraudulentCustomer);
+        return new FraudCheckResponse(isFraudulentCustomer);
 
     }
 }
