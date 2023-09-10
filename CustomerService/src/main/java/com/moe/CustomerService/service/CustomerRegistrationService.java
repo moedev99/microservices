@@ -9,13 +9,12 @@ import com.moe.clients.notification.NotificationClient;
 import com.moe.clients.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
 @AllArgsConstructor
 public class CustomerRegistrationService {
     private final CustomerRegistrationRepository customerRepository;
-    private final RestTemplate restTemplate;
+
     private final FraudClient fraudClient;
     private final NotificationClient notificationClient;
     public void registerCustomer(CustomerRegistrationRequest request){
