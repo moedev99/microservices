@@ -10,8 +10,7 @@
   <packaging>pom</packaging>
 
   <name>moeservices</name>
-  <!-- FIXME change it to the project's website -->
-  <url>https://www.amigoscode.com</url>
+
   <modules>
     <module>CustomerService</module>
     <module>FraudService</module>
