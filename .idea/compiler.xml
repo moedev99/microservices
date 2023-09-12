@@ -9,10 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="apigw" />
         <module name="CustomerService" />
-        <module name="NotificationService" />
         <module name="clients" />
-        <module name="eureka-server" />
         <module name="FraudService" />
+        <module name="amqp" />
+        <module name="NotificationService" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
   </component>

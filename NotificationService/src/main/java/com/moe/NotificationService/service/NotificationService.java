@@ -26,7 +26,7 @@ public class NotificationService {
                 .sender("Mohamed Ali")
                 .sentAt(LocalDateTime.now())
                 .build();
-        log.info("new notification created!" +notification.getNotificationId());
+        log.info("new notification created!" + notification.getNotificationId());
 
         notificationRepository.save(notification);
 

@@ -3,6 +3,7 @@ package com.moe.CustomerService.service;
 import com.moe.CustomerService.controller.customerRequest.CustomerRegistrationRequest;
 import com.moe.CustomerService.entity.Customer;
 import com.moe.CustomerService.repository.CustomerRegistrationRepository;
+import com.moe.amqp.producer.RabbitMQMessageProducer;
 import com.moe.clients.fraud.FraudClient;
 import com.moe.clients.fraud.FraudCheckResponse;
 import com.moe.clients.notification.NotificationClient;
@@ -13,10 +14,11 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class CustomerRegistrationService {
-    private final CustomerRegistrationRepository customerRepository;
 
+    private final CustomerRegistrationRepository customerRepository;
     private final FraudClient fraudClient;
-    private final NotificationClient notificationClient;
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
+
     public void registerCustomer(CustomerRegistrationRequest request){
 
         Customer customer = Customer.builder()
@@ -32,8 +34,9 @@ public class CustomerRegistrationService {
             throw new IllegalStateException("Fraudster");
         }
 
-//        todo: make it async ie add to queue
-        notificationClient.createNotification(new NotificationRequest(customer.getId(), customer.getEmail(), "You have signed in successfully"));
+
+        NotificationRequest notificationRequest = new NotificationRequest(customer.getId(), customer.getEmail(), "You have signed in successfully");
+        rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange", "internal.notification.routing-key");
 
 
     }
