@@ -26,9 +26,11 @@ public class NotificationService {
                 .sender("Mohamed Ali")
                 .sentAt(LocalDateTime.now())
                 .build();
+
+        notificationRepository.saveAndFlush(notification);
         log.info("new notification created!" + notification.getNotificationId());
 
-        notificationRepository.save(notification);
+
 
     }
 }

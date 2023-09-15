@@ -6,18 +6,20 @@ import com.moe.CustomerService.repository.CustomerRegistrationRepository;
 import com.moe.amqp.producer.RabbitMQMessageProducer;
 import com.moe.clients.fraud.FraudClient;
 import com.moe.clients.fraud.FraudCheckResponse;
-import com.moe.clients.notification.NotificationClient;
 import com.moe.clients.notification.NotificationRequest;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
+//@AllArgsConstructor
 public class CustomerRegistrationService {
 
-    private final CustomerRegistrationRepository customerRepository;
-    private final FraudClient fraudClient;
-    private final RabbitMQMessageProducer rabbitMQMessageProducer;
+    @Autowired
+    private  CustomerRegistrationRepository customerRepository;
+    @Autowired
+    private  FraudClient fraudClient;
+    @Autowired
+    private RabbitMQMessageProducer rabbitMQMessageProducer;
 
     public void registerCustomer(CustomerRegistrationRequest request){
 
