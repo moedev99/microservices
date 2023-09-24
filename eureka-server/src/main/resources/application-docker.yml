@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server
+  zipkin:
+    base-url: http://zipkin:9411
+server:
+  port: 8761
+
+#because this is the eureka server itself we have to disable these to properties
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
