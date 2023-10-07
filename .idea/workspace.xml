@@ -6,6 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="57e3a488-6db4-48db-945d-8c3fc5560891" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/moe/CustomerService/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/moe/CustomerService/CustomerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FraudService/src/main/java/com/moe/FraudServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/FraudService/src/main/java/com/moe/FraudServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FraudService/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FraudService/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FraudService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FraudService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotificationService/src/main/java/com/moe/NotificationService/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/java/com/moe/NotificationService/NotificationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotificationService/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotificationService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/fraud/FraudClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/notification/NotificationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/mohamedali/Desktop/moeservices/FraudService/src/main/resources",
+    "last_opened_file_path": "/Users/mohamedali/Desktop/moeservices/k8s/minikube/services",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -52,14 +69,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/FraudService/src/main/resources" />
+      <recent name="$PROJECT_DIR$/k8s/minikube/services" />
+      <recent name="$PROJECT_DIR$/k8s/minikube/services/fraud-service" />
+      <recent name="$PROJECT_DIR$/k8s/minikube/bootstrap" />
+      <recent name="$PROJECT_DIR$/clients/src/main/resources" />
       <recent name="$PROJECT_DIR$/NotificationService/src/main/resources" />
-      <recent name="$PROJECT_DIR$/CustomerService/src/main/resources" />
-      <recent name="$PROJECT_DIR$/eureka-server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/apigw/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FraudServiceApplication">
+  <component name="RunManager" selected="Application.CustomerServiceApplication">
     <configuration name="ApiGWApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.moe.apigw.ApiGWApplication" />
       <module name="apigw" />
@@ -76,6 +93,9 @@
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.moe.CustomerService.CustomerServiceApplication" />
       <module name="customer-service" />
       <extension name="coverage">
@@ -104,6 +124,9 @@
     <configuration name="FraudServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.moe.FraudServiceApplication" />
       <module name="fraud-service" />
       <extension name="coverage">
@@ -119,6 +142,9 @@
     <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.moe.NotificationService.NotificationServiceApplication" />
       <module name="notification-service" />
       <extension name="coverage">
@@ -144,11 +170,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ApiGWApplication" />
+      <item itemvalue="Application.CustomerServiceApplication" />
+      <item itemvalue="Application.EurekaServerApplication" />
+      <item itemvalue="Application.FraudServiceApplication" />
+      <item itemvalue="Application.NotificationServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CustomerServiceApplication" />
-        <item itemvalue="Application.FraudServiceApplication" />
         <item itemvalue="Application.NotificationServiceApplication" />
+        <item itemvalue="Application.FraudServiceApplication" />
         <item itemvalue="Application.ApiGWApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
       </list>

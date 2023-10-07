@@ -2,9 +2,9 @@ server:
   port: 8080
 spring:
   application:
-    name: customer
+    name: customer-service
   datasource:
-    username: mohamedAli
+    username: mohamedali
     password: password
     url: jdbc:postgresql://postgres:5432/customer
 
@@ -24,7 +24,8 @@ spring:
 
 eureka:
   client:
+    enabled: false
     service-url:
       defaultZone: http://eureka-server:8761/eureka
-  fetch-registry: true
-  register-with-eureka: true
+    fetch-registry: true
+    register-with-eureka: true

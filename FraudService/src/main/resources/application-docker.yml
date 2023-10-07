@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: fraud
+    name: fraud-service
   datasource:
     username: mohamedAli
     password: password
@@ -22,5 +22,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:8761/eureka
-  fetch-registry: true
-  register-with-eureka: true
+    fetch-registry: true
+    register-with-eureka: true
+    enabled: false

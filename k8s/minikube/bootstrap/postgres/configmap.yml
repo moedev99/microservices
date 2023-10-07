@@ -4,5 +4,5 @@ metadata:
   name: postgres-config
 data:
   POSTGRES_DB: moedb
-  POSTGRES_USER: mohamedAli
+  POSTGRES_USER: mohamedali
   POSTGRES_PASSWORD: password
