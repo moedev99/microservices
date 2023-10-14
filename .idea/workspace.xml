@@ -5,29 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e3a488-6db4-48db-945d-8c3fc5560891" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/moe/CustomerService/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/moe/CustomerService/CustomerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/moe/CustomerService/service/CustomerRegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/moe/CustomerService/service/CustomerRegistrationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FraudService/src/main/java/com/moe/FraudServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/FraudService/src/main/java/com/moe/FraudServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FraudService/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FraudService/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FraudService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FraudService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotificationService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NotificationService/src/main/java/com/moe/NotificationService/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/java/com/moe/NotificationService/NotificationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotificationService/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NotificationService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/fraud/FraudClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/moe/clients/notification/NotificationClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,28 +60,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/mohamedali/Desktop/moeservices/k8s/minikube/services",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mohamedali/Desktop/moeservices/CustomerService/src/main/java/com/moe/CustomerService/kafkaConfig&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CustomerService/src/main/java/com/moe/CustomerService/kafkaConfig" />
+      <recent name="$PROJECT_DIR$/kafka/src/main/resources" />
       <recent name="$PROJECT_DIR$/k8s/minikube/services" />
       <recent name="$PROJECT_DIR$/k8s/minikube/services/fraud-service" />
       <recent name="$PROJECT_DIR$/k8s/minikube/bootstrap" />
-      <recent name="$PROJECT_DIR$/clients/src/main/resources" />
-      <recent name="$PROJECT_DIR$/NotificationService/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.moe.NotificationService.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CustomerServiceApplication">
+  <component name="RunManager" selected="Application.ApiGWApplication">
     <configuration name="ApiGWApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.moe.apigw.ApiGWApplication" />
       <module name="apigw" />
@@ -93,9 +101,6 @@
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <envs>
-        <env name="SPRING_PROFILES_ACTIVE" value="default" />
-      </envs>
       <option name="MAIN_CLASS_NAME" value="com.moe.CustomerService.CustomerServiceApplication" />
       <module name="customer-service" />
       <extension name="coverage">
@@ -179,10 +184,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CustomerServiceApplication" />
+        <item itemvalue="Application.ApiGWApplication" />
         <item itemvalue="Application.NotificationServiceApplication" />
         <item itemvalue="Application.FraudServiceApplication" />
-        <item itemvalue="Application.ApiGWApplication" />
+        <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
       </list>
     </recent_temporary>

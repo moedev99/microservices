@@ -10,7 +10,8 @@ import org.springframework.context.annotation.PropertySources;
 
 @SpringBootApplication(scanBasePackages = {
         "com.moe.CustomerService",
-        "com.moe.amqp"
+        "com.moe.amqp",
+        "com.moe.config"
 })
 @EnableEurekaClient
 @EnableFeignClients(basePackages = "com.moe.clients")

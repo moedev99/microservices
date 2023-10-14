@@ -14,7 +14,8 @@ import org.springframework.context.annotation.PropertySources;
 @SpringBootApplication(
         scanBasePackages = {
                 "com.moe.NotificationService",
-                "com.moe.amqp"
+                "com.moe.amqp",
+                "com.moe.kafka"
         }
 )
 @EnableEurekaClient

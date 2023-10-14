@@ -7,7 +7,9 @@ import com.moe.amqp.producer.RabbitMQMessageProducer;
 import com.moe.clients.fraud.FraudClient;
 import com.moe.clients.fraud.FraudCheckResponse;
 import com.moe.clients.notification.NotificationRequest;
+import com.netflix.discovery.converters.Auto;
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,6 +22,9 @@ public class CustomerRegistrationService {
     private  FraudClient fraudClient;
     @Autowired
     private RabbitMQMessageProducer rabbitMQMessageProducer;
+
+//    @Autowired
+//    private KafkaTemplate kafkaTemplate;
 
     public void registerCustomer(CustomerRegistrationRequest request){
 
@@ -39,6 +44,7 @@ public class CustomerRegistrationService {
 
         NotificationRequest notificationRequest = new NotificationRequest(customer.getId(), customer.getEmail(), "You have signed in successfully");
         rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange", "internal.notification.routing-key");
+//        kafkaTemplate.send("notification", notificationRequest);
 
 
     }
