@@ -35,7 +35,7 @@ public class KafkaConsumer {
             Map<String, Object> consumerConfig
     ){
         JsonDeserializer<NotificationRequest> jsonDeserializer = new JsonDeserializer<>();
-        jsonDeserializer.addTrustedPackages("com.moe.NotificationService");
+        jsonDeserializer.addTrustedPackages("com.moe.notificationService");
         return new DefaultKafkaConsumerFactory<>(
                 consumerConfig,
                 new StringDeserializer(),

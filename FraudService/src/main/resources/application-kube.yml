@@ -4,7 +4,7 @@ spring:
   application:
     name: fraud-service
   datasource:
-    username: mohamedali
+    username: mohamedAli
     password: password
     url: jdbc:postgresql://postgres:5432/fraud
 

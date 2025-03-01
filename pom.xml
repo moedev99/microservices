@@ -12,11 +12,11 @@
   <name>moeservices</name>
 
   <modules>
-    <module>CustomerService</module>
-    <module>FraudService</module>
+    <module>customerService</module>
+    <module>fraudService</module>
     <module>eureka-server</module>
       <module>clients</module>
-    <module>NotificationService</module>
+    <module>notificationService</module>
       <module>apigw</module>
       <module>amqp</module>
       <module>kafka</module>

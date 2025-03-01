@@ -19,8 +19,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="customerService" target="17" />
-      <module name="FraudService" target="17" />
-      <module name="NotificationService" target="17" />
+      <module name="fraudService" target="17" />
+      <module name="notificationService" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
